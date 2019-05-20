@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Koda resten här */
+body{
+    background-color:  rgb(24, 24, 66);
+    margin: 0px;
+    
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-auto-rows: 50px minmax(200px, auto);
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.377);
+    padding: 5px;
+
+    grid-column: 1 / -1;
+    grid-row: 1;
+    z-index: 1
+}
+
+.hero{
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 1 /  span 3;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 50px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px gray;
+    
+    background-color: rgb(24, 24, 66);
+    background-image: linear-gradient(to right, rgb(255, 201, 130), rgb(115, 225, 233));
+}
+
+.content{
+    background-color: white;
+    padding: 5px;
+    
+    grid-column: 2 / -2;
+    grid-row: 3/  span 3;
+    z-index: 1;
+}
+
+footer{
+    background-color: rgb(209, 19, 19);
+    padding: 5px;
+    margin: 10px 0px 0px 0px;
+    
+    grid-column: 1 / -1;
+}
